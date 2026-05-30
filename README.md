@@ -19,16 +19,18 @@ here is an example
 ```matlab
  figure;
  subplot(1,2,1)
- plot(magic(10));
+ plot(magic(5))
+ ylim([0 30])
  xlabel('X Axis')
  ylabel('Y Axis')
  sgtitle('nicer (not perfect) image')
- legend(); 
+legend('Location', 'northeast')
  subplot(1,2,2)
- imagesc(magic(10))
+ imagesc(magic(5))
  shading interp
  colorbar
+
 ```
 
- <img src="images/myfigure.png" width="500" alt="Example Plot">
+ <img src="images/myfigure.png" width="800" alt="Example Plot">
 
