@@ -17,7 +17,17 @@ Just add the startup.m file to your working directory, and run it before plottin
 
 here is an example
 ```matlab
-figure;plot(magic(10)), colorbar; xlabel('X Axis'), ylabel('Y Axis')
+ figure;
+ subplot(1,2,1)
+ plot(magic(10));
+ xlabel('X Axis')
+ ylabel('Y Axis')
+ sgtitle('nicer (not perfect) image')
+ legend(); 
+ subplot(1,2,2)
+ imagesc(magic(10))
+ shading interp
+ colorbar
 ```
 
  <img src="images/myfigure.png" width="500" alt="Example Plot">
