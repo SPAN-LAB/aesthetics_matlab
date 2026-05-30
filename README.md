@@ -16,6 +16,9 @@ Or
 Just add the startup.m file to your working directory, and run it before plotting the main figures. 
 
 here is an example
+```matlab
+figure;plot(magic(10)), colorbar; xlabel('X Axis'), ylabel('Y Axis')
+```
 
  <img src="images/myfigure.png" width="500" alt="Example Plot">
 
